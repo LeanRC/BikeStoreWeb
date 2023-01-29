@@ -15,113 +15,104 @@
 <body>
     <div class="barraSuperior">
         <a href="index.html">
-            <img src="./img/logo.svg" alt="logo de Bike Store">
+            <img class="redimension1" src="./img/logo.svg" alt="logo de Bike Store">
         </a>
     </div>
     
-<!-- Menú nav -->
-<nav class="navbar navbar-expand-lg" id="barranav">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./pages/lanzamientos.html">Lanzamientos</a>
-            </li>         
-            </ul>
+    <!-- Menú nav -->
+    <nav class="navbar navbar-expand-lg" id="barranav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/lanzamientos.html">Lanzamientos</a>
+                    </li>         
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<!-- Fin nav -->
+    </nav>
+    <!-- Fin nav -->
 
 
-<!-- Menú -->
-    <!-- <nav>
-        <ul>
-            <li>
-                <a href="./pages/productos.html">Productos</a>
-                <a href="./pages/contacto.html">Contacto</a>
-                <a href="./pages/nosotros.html">Nosotros</a>
-                <a href="./pages/lanzamientos.html">Lanzamientos</a>
-            </li>
-        </ul>
-    </nav> -->
-    
-
-<!-- Encabezado -->
+    <!-- Encabezado -->
     <header>
-        <img src="./img/imagen header.jpg" alt="imagen mtb montaña" class="principal">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/header 1.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/header 2.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/header 3.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>      
     </header>
 
 
-<!-- Oferta principal -->
-    <main>
-        <div class="contenedor1">
-            <div>
-                <p class="textoProducto">
-                    Oferta del día
-                </p>
-            </div>
-           
-            <div class="imagenProducto">
-                <img src="./img/venzo verde.jpg" alt="bicicleta venzo raptor r29">
-            </div>
-            
-            <div>
-                <p class="textoProducto">
-                    Bicicleta Venzo Raptor 29er Precio: $65000
-                </p>
-            </div>
-            <div class="imagenProducto">
+    <!-- Oferta del día -->
+    <main id="oferta">
+        <h1>Oferta del día</h1>
+        <section class="ofertaDia">
+            <div></div>
+            <figure>
+                <img class="redimension2" src="./img/venzo verde.jpg" alt="bicicleta venzo raptor r29">
+                <figcaption class="textoProducto">Bicicleta Venzo Raptor 29</figcaption>
+                <p class="textoProducto">Precio: $65000</p>
                 <button class="button">Comprar</button>
-            </div>
-        </div>
+            </figure>
+            <div></div>
+        </section>
     </main>
     
     
-<!-- Footer redes sociales -->
-    <footer class="redesSociales">
-        <div>
+    <!-- Footer -->
+    <div class="linea"></div>
+    <footer class="pieDePagina">
+        <div class="datos1">
             <li>
-                <p>
-                    Serrano 1109, Villa Crespo
-                </p>
-                <p>
-                    +54 11 4268-9534
-                </p>
-                <P>
-                    Lunes a sábados de 10 a 20 hs
-                </P>
+                <p>Serrano 1109, Villa Crespo</p>
+                <p>+54 11 4268-9534</p>
+                <P>Lunes a sábados de 10 a 20 hs</P>
             </li>
         </div>
-        <div>
-            <p>
-                Seguinos en nuestras redes sociales
-            </p>
+        <div class="redesSociales">
+            <p>Seguinos en nuestras redes sociales</p>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="./img/facebook.png" alt="link facebook">     
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./img/instagram.png" alt="link instagram">
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+                <img src="./img/twitter.png" alt="link twitter">
+            </a>
         </div>
-        <a href="https://es-la.facebook.com/" target="_blank">
-           <img src="./img/facebook.png" alt="link facebook">     
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="./img/instagram.png" alt="link instagram">
-        </a>
-        <a href="https://twitter.com/?lang=es" target="_blank">
-            <img src="./img/twitter.png" alt="link twitter">
-        </a>
     </footer>
-
     <!-- JS de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
