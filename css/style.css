@@ -45,7 +45,7 @@ img.redimension2{
 .button{
     background-color: #008CBA;
     border: none;
-    color: white;
+    color: #FFFFFF;;
     padding: 15px 32px;
     text-decoration: none;
     font-family: 'Rowdies', cursive;
@@ -95,23 +95,6 @@ img.redimension2{
     padding-bottom: 1rem;
 }
 
-.contacto{
-    font-family: 'Rowdies', cursive;
-    color: rgb(232, 121, 8);
-    font-weight: 100;
-    font-size: 40px;
-    margin-left: 10px;
-}
-
-.formulario{
-    font-family: 'Rowdies', cursive;
-    text-align: left;
-    color: black;
-    margin-left: 10px;
-}
-
-/* Inicio Lanzamientos */
-
 .tituloGradiante{
     display: flex;
     text-align: center;
@@ -125,11 +108,7 @@ img.redimension2{
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top: 10px;
-
 }
-
-
-/* Final de Lanzamientos */
 
 .contenedor1{
     background-color: white;
@@ -157,12 +136,8 @@ img.redimension2{
 }
 
 .contenedor2{
-    background-color: white;
-    border-top: solid 2px #ECE8E8;
-    border-right: solid 2px #ECE8E8;
-    border-bottom: solid 2px #ECE8E8;
-    border-left: solid 2px #ECE8E8;
-    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -172,33 +147,27 @@ img.redimension2{
     font-family: 'Rowdies', cursive;
     text-align: center;
     color: rgb(232, 121, 8);
-    font-weight: 200;
-    font-size: 35px; 
+    font-weight: 500;
+    font-size: 28px; 
 }
 
 .parrafo{
     font-family: 'Rowdies', cursive;
     text-align: center;
-    color: black;
-    font-weight: 100;
-    font-size: 20px; 
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px; 
 }
-
-
-
-
-
-
-
 
 .btn1{
     display: flex;
-    background-color: #4CAF50;
+    background-color: #008CBA;
     justify-content: center;
     color: #FFFFFF;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    font-family: 'Rowdies', cursive;
     font-display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
@@ -208,11 +177,10 @@ img.redimension2{
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
-
 }
 
 .btn1:hover{
-    background-color:#008CBA;
+    background-color:#098d1a;
     color: white;
 }
 
@@ -220,6 +188,7 @@ img.redimension2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
 }
 
 .col{
@@ -236,6 +205,31 @@ img.redimension2{
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 3rem;
+}
+
+.col-md-6{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.my-form {
+    color: #305896;
+    
+}
+.my-form .btn-default {
+    background-color: #305896;
+    color: #fff;
+    border-radius: 0;
+    border-radius: 10px;
+}
+.my-form .btn-default:hover {
+    background-color: #4498C6;
+    color: #fff;
+}
+.my-form .form-control {
+    border-radius: 10px;
 }
 
 /*Selectores de id*/
@@ -285,8 +279,7 @@ img.redimension2{
 }
 
 #oferta .ofertaDia figure img{
-    text-align: center;
-    
+    text-align: center;  
 }
 
 #oferta .ofertaDia figure figcaption{
@@ -303,5 +296,4 @@ img.redimension2{
     color: rgb(232, 121, 8);
     font-weight: 400;
     font-size: 30px;
-    
 }
