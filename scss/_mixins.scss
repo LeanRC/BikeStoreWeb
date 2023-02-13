@@ -1,0 +1,44 @@
+// Botones de compra
+.button {
+    background-color: $buttonColor;
+    border: none;
+    color: $secondaryColor;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-family: $mainFont;
+    text-align: center;
+    font-display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: $hoverColor2;
+    color: $secondaryColor;
+}
+
+// Extend
+.btn1 {
+    @extend .button;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+ }
+
+//  Mixin
+@mixin alineacion1 ($m-right, $m-left, $p-top, $p-bottom) {
+    margin-right: $m-right;
+    margin-left: $m-left;
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+}
+
+@mixin alineacion2 ($p-left, $p-right, $m-top, $m-bottom) {
+    padding-left: $p-left;
+    padding-right: $p-right;
+    margin-top: $m-top;
+    margin-bottom: $m-bottom;
+}

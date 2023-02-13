@@ -1,0 +1,170 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import "_vars";
+@import "_commons";
+@import "_mixins";
+
+// Barra superior
+.barraSuperior {
+    background-color: $secondaryColor;
+    text-align: center;
+    line-height:0;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// Barra Navegación
+#barranav {
+    background-color:$mainColor;
+    ul {
+        li {
+            a {
+                font-family: $mainFont;
+                color: $secondaryColor;
+                text-decoration: none;
+                font-size: 28px;
+                &:hover{
+                    color: $hoverColor1;
+                }
+            }   
+        }
+    }
+}
+
+// Título Gradiente h1
+.tituloGradiante h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: $mainFont;
+    color: $secondaryColor;
+    text-decoration: none;
+    font-size: 28px;
+    background-image: linear-gradient(to right, red , yellow);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+// Box Oferta del día
+#oferta {
+    .ofertaDia {
+        font-family: $mainFont;
+        color: $mainColor;
+        font-weight: 400;
+        font-size: 30px;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        figure {
+            border-top: solid 2px $boxColor;
+            border-right: solid 2px $boxColor;
+            border-bottom: solid 2px $boxColor;
+            border-left: solid 2px $boxColor;
+            border-radius: 10px;
+            padding: auto;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+// Footer
+.linea {
+    background-color: $mainColor;
+    padding-top: 1px;
+    padding-bottom: 1px; 
+}
+
+.pieDePagina {
+    display: flex;
+    font-family: $mainFont;
+    text-align: center;
+    list-style: none;
+    color: $mainColor;
+    font-weight: 500;
+    font-size: 16px;
+    .datos {
+        @include alineacion1 (auto, 3rem, 1rem, 1rem);
+        line-height:0.8;
+    }
+    .redesSociales {
+        @include alineacion1 (3rem, auto, 0.5rem, 1rem);
+    }
+}
+
+// Contenedor Productos
+.container{
+    .row{
+        .col {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            &:hover {
+                transform: translateY(-2%);
+            }
+            .contenedorProd {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+// Formulario de contacto
+.row{
+    .col-md-6 {
+        @include alineacion2 (40px, 40px, 50px, 90px);
+        .my-form {
+            color: $formColor;
+            .btn-default {
+                background-color: $formColor;
+                color: $secondaryColor;
+                border-radius: 0;
+                border-radius: 10px;
+            }
+            .btn-default:hover {
+                background-color: $hoverColor3;
+                color: $secondaryColor;
+            }
+            .form-control {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// Nosotros
+.contenedorNosotros {
+    @include alineacion2 (50px, 50px, 50px, 50px);
+    font-family: $mainFont;
+    text-align: center;
+    .tituloGeneral {
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 28px; 
+    }
+    .parrafo {
+        color: $paragraphColor;
+        font-weight: 400;
+        font-size: 16px; 
+    }
+}
+
+.contenedorLocal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
